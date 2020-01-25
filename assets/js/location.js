@@ -33,7 +33,7 @@ if (navigator.geolocation && navigator.bluetooth) {
     // now look for BT devices:
     navigator.bluetooth.requestDevice({
       acceptAllDevices: true,
-      optionalServices: ['battery_service']
+      // optionalServices: ['battery_service']
     })
     .then(device => {       
       nudge.innerHTML = nudge.innerHTML+ '<br>device found: '+device;
